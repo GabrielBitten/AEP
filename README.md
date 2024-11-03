@@ -15,10 +15,10 @@ Antes de executar o projeto, você precisa ter os seguintes arquivos:
 
 Os arquivos podem ser baixados do Google Drive. Utilize os seguintes links:
 
-- [Download password_strength_model.pkl]
-- [Download outro_arquivo.ext]
+- password_strength_model.pkl
+- vectorizer.pkl
 
-(https://drive.google.com/drive/folders/18YNaDu1la1tk5JTvHFMl9RFehDgaWra5?hl=pt-br)
+https://drive.google.com/drive/folders/18YNaDu1la1tk5JTvHFMl9RFehDgaWra5?hl=pt-br
 
 ## Instruções de uso
 
