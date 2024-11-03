@@ -1,16 +1,35 @@
-# flutterapp
+# Verificador de Senha
 
-A new Flutter project.
+Este projeto é um verificador de força de senhas que utiliza um modelo de machine learning para avaliar a força de senhas fornecidas pelo usuário.
 
-## Getting Started
+## Pré-requisitos
 
-This project is a starting point for a Flutter application.
+Antes de executar o projeto, você precisa ter os seguintes arquivos:
 
-A few resources to get you started if this is your first Flutter project:
+1. **`password_strength_model.pkl`** 
+2. **`outro_arquivo.ext`** 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Os dois arquivos são gerados pelo ia.py localizado na pasta iasenhas, porém devido ao seu tamanho coloquei eles em um drive.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Como obter os arquivos
+
+Os arquivos podem ser baixados do Google Drive. Utilize os seguintes links:
+
+- [Download password_strength_model.pkl]
+- [Download outro_arquivo.ext]
+
+(https://drive.google.com/drive/folders/18YNaDu1la1tk5JTvHFMl9RFehDgaWra5?hl=pt-br)
+
+## Instruções de uso
+
+1. Após baixar os arquivos, coloque-os na pasta `iasenhas` do seu projeto.
+
+2. Dentro da classe verificador_senha, no método checkPasswordStrength, substitua o IP pelo IP do seu PC
+
+3. Use o comando: python app.py
+
+4. Use o comando: flutter pub get
+
+5. Use o comando: flutter run
+
+
