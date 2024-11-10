@@ -12,7 +12,6 @@ Machine Learning: Algoritmo treinado para classificar a força das senhas.
 
 Flutter: Framework utilizado para a criação da interface do usuário.
 
-Modelos de Machine Learning: O projeto utiliza modelos treinados para classificar a força da senha com base em características e padrões.
 
 ## Pré-requisitos
 
