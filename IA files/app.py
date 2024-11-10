@@ -3,28 +3,26 @@ import pickle
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  
+CORS(app)
 
-with open('password_strength_model.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+with open('password_strength_model.pkl', 'rb') as modelo_arquivo:
+    modelo_forca_senha = pickle.load(modelo_arquivo)
 
-with open('vectorizer.pkl', 'rb') as vec_file:
-    vectorizer = pickle.load(vec_file)
+with open('vectorizer.pkl', 'rb') as vetor_arquivo:
+    vetor_senha = pickle.load(vetor_arquivo)
 
 
 @app.route('/predict', methods=['POST'])
-def predict():
-    data = request.get_json()
-    senha = data['senha']
+def prever_forca_senha():
+    dados_recebidos = request.get_json()
+    senha_recebida = dados_recebidos['senha']
     
-
-    senha_vec = vectorizer.transform([senha])
+    senha_transformada = vetor_senha.transform([senha_recebida])
     
-  
-    prediction = model.predict(senha_vec)
-    strength = int(prediction[0]) 
+    predicao_forca = modelo_forca_senha.predict(senha_transformada)
+    nivel_forca = int(predicao_forca[0])
 
-    return jsonify({'strength': strength})
+    return jsonify({'strength': nivel_forca})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
