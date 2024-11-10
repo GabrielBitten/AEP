@@ -1,7 +1,7 @@
 import unittest
 from app import app 
 
-class TestPasswordStrengthAPI(unittest.TestCase):
+class TestesForcaApi(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.client = app.test_client() 
