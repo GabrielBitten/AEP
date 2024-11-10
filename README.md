@@ -54,10 +54,13 @@ Execute o seguinte comando para instalar as dependências
 
 ## Endpoints da API
 /predict [POST]
+
 Descrição: Este endpoint recebe uma senha como entrada e retorna um valor indicando a força da senha. O valor retornado pode ser:
 
 0: Senha Fraca
+
 1: Senha Média
+
 2: Senha Forte
 
 Exemplo de Requisição:
@@ -82,10 +85,15 @@ Os testes verificam diferentes cenários de senhas para garantir que o modelo de
 Testes:
 
 Senha Vazia: Verificar a resposta da API quando uma senha em branco é enviada.
+
 Senha Fraca: Testa senhas simples e comuns.
+
 Senha Média: Testa senhas com combinações mais complexas.
+
 Senha Forte: Testa senhas com caracteres especiais, letras maiúsculas, minúsculas e números.
+
 Teste de Grande Quantidade de Requisições: Testar a capacidade da API de lidar com várias requisições simultâneas.
+
 Teste de Tempo de Resposta: Verificar se a API responde dentro de um tempo aceitável.
 
 
