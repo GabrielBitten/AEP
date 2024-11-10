@@ -5,9 +5,13 @@ Este projeto é um verificador de força de senhas que utiliza um modelo de mach
 ## Tecnologias Utilizadas
 
 Python: Para desenvolvimento da API que realiza a análise das senhas.
+
 Flask: Framework para construção da API.
+
 Machine Learning: Algoritmo treinado para classificar a força das senhas.
+
 Flutter: Framework utilizado para a criação da interface do usuário.
+
 Modelos de Machine Learning: O projeto utiliza modelos treinados para classificar a força da senha com base em características e padrões.
 
 ## Pré-requisitos
@@ -48,7 +52,7 @@ Execute o seguinte comando para instalar as dependências
 
 4. Execute os testes na pasta IA files: python -m unittest test_api.py
 
-# #Endpoints da API
+## Endpoints da API
 /predict [POST]
 Descrição: Este endpoint recebe uma senha como entrada e retorna um valor indicando a força da senha. O valor retornado pode ser:
 
